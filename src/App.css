@@ -1,0 +1,172 @@
+.App {
+  text-align: center;
+}
+
+/* Home Page */
+
+  /* Navigation */
+    .NavTop {
+      display: flex;
+      position: relative;
+      top: 10px;
+      justify-content: space-between;
+    }
+
+    /* Profile Information */
+    .ProfileDetails {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: 100px;
+    }
+
+    .ProfilePhoto {
+      height: 70px;
+      width: 70px;
+      border-radius: 100%;
+      background-color: grey;
+    }
+
+    .TopButtons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 100px;
+    }
+
+    .TopButtons a {
+      padding: 0px 20px 0px 20px;
+    }
+
+    /* Seperator Line */
+    .Seperator {
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      position: relative;
+      top: 15px;
+    }
+
+    /* Navigation Bottom Section */
+    .NavBottom{
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      top: 15px;
+    }
+
+    .Links {
+      display: flex;
+      position: relative;
+      left:100px;
+    }
+
+    /* Logo */
+    .Logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #9FC131;
+      font-size: 30px;
+    }
+
+    .Logo i {
+      font-size: 30px;
+    }
+
+    .Logo span {
+      color: #042940;
+    }
+
+    /* Search bar */
+    .Search {
+      display: flex;
+      position: relative;
+      top: 9px;
+      left: 50px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 25px;
+      width: 150px;
+      background-color: grey;
+    }
+
+    .Search input {
+      width: 110px;
+      border-style: none;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    .SearchButton {
+      border-style: none;
+      border-radius: 0px 10px 10px 0px;
+    }
+
+    /* Orders, Profile, History and Settings */
+    .InnerLinks {
+      display: flex;
+      position: relative;
+      top: 10px;
+      left: 150px;
+    }
+
+    .InnerLinks a {
+      padding: 0px 20px 0px 20px;
+    }
+
+    .Icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 100px;
+    }
+
+    .Icons a {
+      padding: 0px 40px 0px 40px;
+    }
+  /* Navigation */  
+
+  /* Content */
+
+    .Advert {
+      background-color: grey;
+      position: relative;
+      height: 400px;
+      top: 20px;
+    }
+
+    .Advert h1 {
+      position: relative;
+      text-align: left;
+      left: 100px;
+      top: 50px;
+    }
+
+    .Advert button {
+       position: relative;
+       top: 150px;
+       left: -576px;
+    }
+
+    .Advert p {
+      position: relative;
+      left: 100px;
+      top: 90px;
+      text-align: left;
+      width: 600px;
+    }
+
+    .Frequantly {
+      position: relative;
+      top: 50px;
+    }
+
+    .Featured {
+      position: relative;
+      top: 70px;
+    }
+/* /Home Page */
