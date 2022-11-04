@@ -1,0 +1,11 @@
+header {
+    position: relative;
+    top: 20px;
+    background-color: aqua;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+header span {
+    color: grey;
+}

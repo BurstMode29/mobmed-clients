@@ -1,172 +1,374 @@
 .App {
+  font-family: 'Exo 2', sans-serif;
   text-align: center;
 }
 
 /* Home Page */
 
-  /* Navigation */
-    .NavTop {
-      display: flex;
-      position: relative;
-      top: 10px;
-      justify-content: space-between;
-    }
+/* Navigation */
 
-    /* Profile Information */
-    .ProfileDetails {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      left: 100px;
-    }
+.MenuButton {
+  display: none;
+}
 
-    .ProfilePhoto {
-      height: 70px;
-      width: 70px;
-      border-radius: 100%;
-      background-color: grey;
-    }
+.DropList {
+  height: 0%;
+  width: 85%;
+  background-color: #042940;
+  position: absolute;
+  z-index: 1;
+  transition: height 1s;
+}
 
-    .TopButtons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      right: 100px;
-    }
+@media only screen and (max-width:1200px) {
+  .MenuButton {
+    display: block;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    right: 1px;
+  }
 
-    .TopButtons a {
-      padding: 0px 20px 0px 20px;
-    }
+  .MenuButton i {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
-    /* Seperator Line */
-    .Seperator {
-      width: 100%;
-      height: 3px;
-      background-color: black;
-      position: relative;
-      top: 15px;
-    }
+.NavTop {
+  display: flex;
+  position: relative;
+  top: 10px;
+  justify-content: space-between;
+}
 
-    /* Navigation Bottom Section */
-    .NavBottom{
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: 15px;
-    }
+@media only screen and (max-width:500px) {
+  .NavTop {
+    display: none;
+  }
+}
 
-    .Links {
-      display: flex;
-      position: relative;
-      left:100px;
-    }
+/* Profile Information */
+.ProfileDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 100px;
+}
 
-    /* Logo */
-    .Logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #9FC131;
-      font-size: 30px;
-    }
+@media only screen and (max-width:1200px) {
+  .ProfileDetails {
+    left: 0px;
+  }
+}
 
-    .Logo i {
-      font-size: 30px;
-    }
+.ProfilePhoto {
+  height: 70px;
+  width: 70px;
+  border-radius: 100%;
+  background-color: grey;
+}
 
-    .Logo span {
-      color: #042940;
-    }
+@media only screen and (max-width:1200px) {
+  .ProfilePhoto {
+    height: 50px;
+    width: 50px;
+  }
+}
 
-    /* Search bar */
-    .Search {
-      display: flex;
-      position: relative;
-      top: 9px;
-      left: 50px;
-      border-radius: 20px;
-      justify-content: center;
-      align-items: center;
-      height: 25px;
-      width: 150px;
-      background-color: grey;
-    }
+@media only screen and (max-width:500px) {
+  .ProfilePhoto {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    left: 10px;
+  }
+}
 
-    .Search input {
-      width: 110px;
-      border-style: none;
-      border-radius: 10px 0px 0px 10px;
-    }
+.TopButtons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 100px;
+}
 
-    .SearchButton {
-      border-style: none;
-      border-radius: 0px 10px 10px 0px;
-    }
+@media only screen and (max-width:1200px) {
+  .TopButtons {
+    display: none;
+  }
+}
 
-    /* Orders, Profile, History and Settings */
-    .InnerLinks {
-      display: flex;
-      position: relative;
-      top: 10px;
-      left: 150px;
-    }
+.TopButtons a {
+  padding: 0px 20px 0px 20px;
+}
 
-    .InnerLinks a {
-      padding: 0px 20px 0px 20px;
-    }
+/* Seperator Line */
+.Seperator {
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  position: relative;
+  top: 15px;
+}
 
-    .Icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-      right: 100px;
-    }
+@media only screen and (max-width:500px) {
+  .Seperator {
+    display: none;
+  }
+}
 
-    .Icons a {
-      padding: 0px 40px 0px 40px;
-    }
-  /* Navigation */  
 
-  /* Content */
+/* Navigation Bottom Section */
+.NavBottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 15px;
+}
 
-    .Advert {
-      background-color: grey;
-      position: relative;
-      height: 400px;
-      top: 20px;
-    }
+.Links {
+  display: flex;
+  position: relative;
+  left: 100px;
+}
 
-    .Advert h1 {
-      position: relative;
-      text-align: left;
-      left: 100px;
-      top: 50px;
-    }
+@media only screen and (max-width:1200px) {
+  .Links {
+    left: 0px;
+  }
+}
 
-    .Advert button {
-       position: relative;
-       top: 150px;
-       left: -576px;
-    }
+/* Logo */
+.Logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9FC131;
+  font-size: 30px;
+}
 
-    .Advert p {
-      position: relative;
-      left: 100px;
-      top: 90px;
-      text-align: left;
-      width: 600px;
-    }
+@media only screen and (max-width:500px) {
+  .Logo {
+    font-size: 15px;
+    position: relative;
+    top: -10px;
+    left: 10px;
+  }
+}
 
-    .Frequantly {
-      position: relative;
-      top: 50px;
-    }
+.Logo i {
+  font-size: 30px;
+}
 
-    .Featured {
-      position: relative;
-      top: 70px;
-    }
+@media only screen and (max-width:500px) {
+  .Logo i {
+    font-size: 15px;
+  }
+}
+
+.Logo span {
+  color: #042940;
+}
+
+/* Search bar */
+.Search {
+  display: flex;
+  position: relative;
+  top: 9px;
+  left: 50px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 150px;
+  background-color: grey;
+}
+
+@media only screen and (max-width:500px) {
+  .Search {
+    width: 100px;
+    left: -20px;
+    top: 20px;
+    background-color: transparent;
+  }
+}
+
+.Search input {
+  width: 110px;
+  border-style: none;
+  border-radius: 10px 0px 0px 10px;
+}
+
+@media only screen and  (max-width:500px) {
+  .Search input {
+    width: 200px;
+    border-color: rgb(196, 193, 193);
+    border-style: solid;
+  }
+}
+
+.SearchButton {
+  border-style: none;
+  border-radius: 0px 10px 10px 0px;
+}
+
+/* Orders, Profile, History and Settings */
+.InnerLinks {
+  display: flex;
+  position: relative;
+  top: 10px;
+  left: 150px;
+}
+
+@media only screen and (max-width:1200px) {
+  .InnerLinks {
+    display:none;
+  }
+}
+
+.InnerLinks a {
+  padding: 0px 20px 0px 20px;
+}
+
+.Icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 100px;
+}
+
+@media only screen and (max-width:1200px) {
+  .Icons {
+    display: none;
+  }
+}
+
+.Icons a {
+  padding: 0px 40px 0px 40px;
+}
+
+
+/* Navigation */
+
+/* Content */
+
+.Advert {
+  background-color: grey;
+  position: relative;
+  height: 400px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AdvertContent {
+  width: 500px;
+  text-align: left;
+  position: relative;
+  left: -200px;
+}
+
+@media only screen and (max-width:800px) {
+  .AdvertContent {
+    width: 100%;
+    text-align: center;
+    position: none;
+    left: 0px;
+  }
+}
+
+.Advert img {
+  height: 400px;
+  width: 400px;
+  position: relative;
+  float: right;
+}
+
+@media only screen and (max-width:800px) {
+  .Advert img {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width:1200px) {
+  .Advert {
+    top: 40px;
+  }
+
+  .Advert h1{
+    font-size: 15px;
+  }
+}
+
+.Frequantly {
+  position: relative;
+  top: 50px;
+}
+
+.Featured {
+  position: relative;
+  top: 70px;
+}
+
+/* Shop Section in the home page */
+.Shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:1200px) {
+  .Shop {
+    flex-direction: column;
+  }
+}
+
+/* Listings.js */
+.Listing {
+  height: 200px;
+  width: 200px;
+  margin: 5px 50px 5px 50px;
+  background-color: rgb(163, 161, 161);
+}
+
+/* Columns Listings */
+.Column1 {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:500px) {
+  .Column1 {
+    flex-direction: column;
+  }  
+}
+
+.Column2 {
+  display: flex;
+  height: 200px;
+  width: 100%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+@media only screen and (max-width:500px) {
+  .Column2 {
+    flex-direction: column;
+  }  
+}
 /* /Home Page */
