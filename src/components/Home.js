@@ -1,19 +1,16 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Listings from './Listings';
+import Items from './Items';
 import image from '../images/advertImage.png';
 import Navigation from './Navigation';
 
-
 function Home() {
-
-   
     return (
         <div>
 
-        <Routes>
-            <Route path='/' element={<Navigation />} />
-        </Routes>
+            <Routes>
+                <Route path='/' element={<Navigation />} />
+            </Routes>
 
             <div className='Content'>
                 <div className='Advert'>
@@ -24,16 +21,16 @@ function Home() {
                             Pariatur qui eiusmod enim qui eu dolor fugiat sit dolor aliquip.
                             Quis consectetur enim dolore nisi consectetur ad pariatur nisi aliquip.
                         </p>
-                        <button>Learn More</button>
+                        <button>LEARN MORE</button>
                     </div>
                     <img src={image} alt='image' />
                 </div>
             </div>
-
             <Routes>
-                <Route path='/' element={<Listings />} />
+                <Route path='/' element={<Items />} />
             </Routes>
 
+            <footer></footer>
         </div>
     )
 }

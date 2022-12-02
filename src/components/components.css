@@ -1,0 +1,150 @@
+.productCard {
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    right: 20px;
+}
+
+.productImage {
+    height: 150px;
+    width: 190px;
+    background-color: grey;
+}
+
+.addProduct {
+    height: 50px;
+    width: 190px;
+    position: relative;
+    background-color: #1E1E1E;
+    border-style: none;
+    color: white;
+    top: 10px;
+}
+
+.addProduct:hover {
+    background-color: grey;
+}
+
+.featuredProducts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+/* Cart */
+.Cart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.cartHeader {
+    text-align: left;
+    margin: 10px;
+}
+
+.cartHeader span {
+    color: #BF0436;
+}
+.cartList {
+    position: relative;
+    top: -50px;
+    width: 50%;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.Total {
+    background-color: #e2e2e2;
+    width: 40%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.cartItem {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: solid rgb(209, 208, 208);
+    position: relative;
+    right: 20px;
+}
+
+.cartItemImage {
+    width: 45px;
+    height: 45px;
+    background-color: #1E1E1E;
+}
+
+.totalHeader {
+    text-align: left;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.orderTotal {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.promoCode {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.Shipping {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.subTotal {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.checkOut {
+    position: relative;
+    background-color: #BF0436;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    right: -500px;
+    margin-bottom: 40px;
+    height: 50px;
+    width: 400px;
+}
+
+.checkOut:hover {
+    box-shadow: 0px 0px 7px #BF0436;
+}

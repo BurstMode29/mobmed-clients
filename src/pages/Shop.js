@@ -1,7 +1,7 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import Listings from './Listings';
-import Navigation from './Navigation';
+import Items from '../components/Items';
+import Navigation from '../components/Navigation';
 
 function Shop() {
   return (
@@ -14,9 +14,10 @@ function Shop() {
 
       {/* Listings */}
       <Routes>
-        <Route path='/' element={<Listings />} />
+        <Route path='/' element={<Items />} />
       </Routes>
       {/* Listings */}
+      <footer></footer>
     </div>
   )
 }

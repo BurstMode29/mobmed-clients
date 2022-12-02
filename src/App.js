@@ -1,11 +1,12 @@
 import './App.css';
 import { Link, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Shop from './components/Shop';
-import Listings from './components/Listings';
-import RequestForm from './components/RequestForm';
+import Shop from './pages/Shop';
+import Items from './components/Items';
+import RequestForm from './pages/RequestForm';
 import Navigation from './components/Navigation';
-import Book from './components/Book';
+import Book from './pages/Book';
+import Cart from './components/Cart';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Route path='/request' element={<RequestForm />} />
         <Route path='/book' element={<Book />} />
         <Route path='/' element={<Home />} />
-        <Route path='/' element={<Listings />} />
+        <Route path='/' element={<Items />} />
+        <Route path='/cart' element={<Cart />} />
         <Route path='/' element={<Navigation />} />
       </Routes>
 

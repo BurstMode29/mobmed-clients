@@ -1,18 +1,19 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom';
-import Navigation from './Navigation';
+import Navigation from '../components/Navigation';
+import '../RequestForm.css';
 
-function Book() {
+function RequestForm() {
     return (
         <div>
             <Routes>
                 <Route path='/' element={<Navigation />} />
             </Routes>
 
-            <div>This is the bookings page!</div>
-
+            <div>Request Form</div>
+            <footer></footer>
         </div>
     )
 }
 
-export default Book
+export default RequestForm
