@@ -148,3 +148,90 @@
 .checkOut:hover {
     box-shadow: 0px 0px 7px #BF0436;
 }
+
+/* Message */
+.block {
+    background-color: #BF0436;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    left: 30%;
+    top: 40px;
+  }
+  
+  .messages {
+    height: 450px;
+    width: 500px;
+    overflow-y: auto;
+  }
+  
+  .typeArea {
+    width: 500px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typeArea input {
+    height: 40px;
+    width: 400px;
+  }
+  
+  .typeArea button {
+    width: 100px;
+    height: 50px;
+  }
+  
+  .user-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    position: relative;
+    margin-top: 5px;
+    top: 10px;
+    left: 10px;
+    color: #1E1E1E;
+    font-weight: bold;
+  }
+  
+  .user-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    background-color: cadetblue;
+    padding: 20px;
+    position: relative;
+    margin-top: 5px;
+    top: 10px;
+    left: 240px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .deleteMessage {
+    position: absolute;
+    top: -1px;
+    right: 5px;
+    text-decoration-line: none;
+    font-weight: bold;
+  }
+
+  .Type {
+    background-color: #1E1E1E;
+    border-style: none;
+    position: relative;
+    top: 3.5px;
+  }
+
+  .Send {
+    background-color: #1E1E1E;
+    border-style: none;
+    color: #BF0436;
+  }

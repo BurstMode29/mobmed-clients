@@ -40,7 +40,7 @@ function Navigation() {
 
                     <div className='Icons'>
                         <Link to='/cart'><div><a href='#'><i class="fa-sharp fa-solid fa-cart-shopping"></i></a></div></Link>
-                        <div><a href='#'><i class="fa-sharp fa-solid fa-message"></i></a></div>
+                        <Link to='/message'><div><a href='#'><i class="fa-sharp fa-solid fa-message"></i></a></div></Link>
                         <div><a href='#'><i class="fa-sharp fa-solid fa-bell"></i></a></div>
                     </div>
                 </div>
